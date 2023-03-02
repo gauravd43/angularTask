@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">SrNo</th>
+            <th scope="col">Name</th>
+            <th scope="col">Designation</th>
+            <th scope="col">Salary</th>
+    </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let customer of customerList; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{customer.fullName}}</td>
+            <td>{{customer.designation}}</td>
+            <td>{{customer.salary}}</td>
+        </tr>
+    </tbody>
+</table>
